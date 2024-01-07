@@ -5,20 +5,12 @@ import { PageFooterHyperlink } from "./page-footer-hyperlink";
 export const PageFooter = () => {
   const resourceList: Auth0Resource[] = [
     {
-      path: "https://auth0.com/why-auth0/",
-      label: "Why Auth0",
+      path: "https://helphero.com/why-helphero/",
+      label: "Why HelpHero",
     },
     {
-      path: "https://auth0.com/docs/get-started",
+      path: "https://helphero.com/get-started",
       label: "How It Works",
-    },
-    {
-      path: "https://auth0.com/blog/developers/",
-      label: "Developer Blog",
-    },
-    {
-      path: "https://auth0.com/contact-us",
-      label: "Contact an Expert",
     },
   ];
 
@@ -28,24 +20,23 @@ export const PageFooter = () => {
         <div className="page-footer-grid__info">
           <div className="page-footer-info__message">
             <p className="page-footer-message__headline">
-              <span>This sample application is brought to you by&nbsp;</span>
-              <PageFooterHyperlink path="https://auth0.com/">
-                <>Auth0</>
+              <span>This application is brought to you by&nbsp;</span>
+              <PageFooterHyperlink path="https://github.com/damicofj">
+                <>Francisco D'Amico</>
               </PageFooterHyperlink>
             </p>
             <p className="page-footer-message__description">
-              <PageFooterHyperlink path="https://auth0.com/docs/quickstarts/">
+              <PageFooterHyperlink path="/register">
                 <>
                   <span>
-                    Securely implement authentication using Auth0 on any stack
-                    and any device&nbsp;
+                    Securely support your causes with a small donation &nbsp;
                   </span>
                   <u>in less than 10 minutes</u>
                 </>
               </PageFooterHyperlink>
             </p>
           </div>
-          <div className="page-footer-info__button">
+          {/* <div className="page-footer-info__button">
             <a
               id="create-account-button"
               className="button button--secondary"
@@ -55,7 +46,7 @@ export const PageFooter = () => {
             >
               Create Free Auth0 Account
             </a>
-          </div>
+          </div> */}
           <div className="page-footer-info__resource-list">
             {resourceList.map((resource) => (
               <div
@@ -74,12 +65,12 @@ export const PageFooter = () => {
             <img
               className="page-footer-brand__logo"
               src="https://cdn.auth0.com/blog/hello-auth0/auth0-shield.svg"
-              alt="Auth0"
+              alt="0workers"
               width="20"
               height="22.22"
             />
-            <PageFooterHyperlink path="https://auth0.com/">
-              <>Auth0 Inc</>
+            <PageFooterHyperlink path="https://helphero.com/">
+              <>HelpHero</>
             </PageFooterHyperlink>
           </div>
         </div>

@@ -34,6 +34,11 @@
     var(--pink) -2.47%,
     var(--yellow) 102.78%
   );
+  --pink-black-gradient: linear-gradient(
+    153.07deg,
+    var(--pink) -2.47%,
+    var(--black) 110.78%
+  );
 
   --pink-indigo-gradient: linear-gradient(
     153.07deg,

@@ -21,6 +21,9 @@
 .hero-banner--pink-yellow {
   background: var(--pink-yellow-gradient);
 }
+.hero-banner--pink-black {
+  background: var(--pink-black-gradient);
+}
 
 .hero-banner--blue-aqua {
   background: var(--blue-aqua-gradient);

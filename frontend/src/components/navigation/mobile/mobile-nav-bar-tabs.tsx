@@ -18,11 +18,11 @@ export const MobileNavBarTabs: React.FC<MobileNavBarTabsProps> = ({
         label="Profile"
         handleClick={handleClick}
       />
-      <MobileNavBarTab
+      {/* <MobileNavBarTab
         path="/public"
         label="Public"
         handleClick={handleClick}
-      />
+      /> */}
       {isAuthenticated && (
         <>
           <MobileNavBarTab
